@@ -1,7 +1,6 @@
 {
     "compilerOptions": {
-        "target" : "es5",
-        "lib": ["es5", "es2017", "dom"],
+        "lib": ["es6", "es2017", "dom"],
         "removeComments": true,
         "outDir": "build",
         "sourceMap": true,

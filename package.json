@@ -4,15 +4,18 @@
   "description": "'TypeScript project for BSA-2018'",
   "main": "index.ts",
   "scripts": {
-    "predev": "rimraf build",
+    "predev": "rimraf build .cache",
     "dev": "tsc -p tsconfig.json",
-    "dev:watch": "tsc -p tsconfig.json -watch"
+    "dev:watch": "tsc -p tsconfig.json -watch",
+    "start": "parcel index.html"
   },
   "author": "Gleb Danylov",
   "license": "ISC",
   "dependencies": {
+    "parcel": "^1.9.7"
   },
   "devDependencies": {
+    "rimraf": "^2.6.2",
     "typescript": "^2.9.2"
   }
 }
