@@ -1,7 +1,6 @@
 interface IFighter {
-    setDamage(damage:number): void;
+    setDamage(damage: number): void;
     hit(enemy, point: number): void;
-    // knockout(): object;
   }
 
 export default class Fighter implements IFighter {
@@ -21,8 +20,8 @@ export default class Fighter implements IFighter {
       enemy.setDamage(damage);
     }
   
-    protected knockout() {
-      return new Promise((resolve, reject) => {
+    protected knockout(): Promise<void> {
+      return new Promise<void> ((resolve) => {
         setTimeout(() => {
           console.log("time is over");
           resolve();

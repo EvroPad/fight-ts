@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
-        "target": "es6",
+        "target" : "es5",
+        "lib": ["es5", "es2017", "dom"],
         "removeComments": true,
         "outDir": "build",
         "sourceMap": true,
@@ -8,9 +9,9 @@
         "noUnusedLocals": true
     },
     "files":[
-        "index.ts",
-        "fight.ts",
-        "fighter.ts",
-        "improvedFighter.ts"
+        "./src/index.ts",
+        "./src/fight.ts",
+        "./src/fighter.ts",
+        "./src/improvedFighter.ts"
     ]
 }

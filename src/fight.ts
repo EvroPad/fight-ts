@@ -30,3 +30,4 @@ async function fight(fighter, improvedFighter, ...points) {
   }
   
   export default fight;
+  
